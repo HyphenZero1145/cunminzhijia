@@ -13,6 +13,8 @@ enableEmoji = true
   qqText = '加入QQ群'
   # B站空间主页链接（个人简介区）
   bilibiliSpace = 'https://space.bilibili.com/514215377'
+  # 黑盒语音频道
+  voiceLink = 'https://chat.xiaoheihe.cn/iilzraj3'
   # 首页显示的视频数量（其余折叠到 /videos/ 页面）
   videoShow = 9
 
