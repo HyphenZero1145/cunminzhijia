@@ -99,26 +99,46 @@ section { margin-top: 2.8rem; }
   transition: opacity .15s;
 }
 .video-card:hover .play-icon { opacity: 1; }
+.video-length {
+  position: absolute;
+  right: .5rem; bottom: .5rem;
+  background: rgba(0,0,0,.75);
+  color: #fff;
+  font-size: .75rem;
+  padding: .1rem .4rem;
+  border-radius: 4px;
+  z-index: 1;
+}
 .video-info { padding: .9rem 1rem 1.1rem; }
 .video-info h3 {
   font-size: .98rem;
   line-height: 1.45;
-  margin-bottom: .35rem;
+  margin-bottom: .45rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.video-info p {
-  color: var(--muted);
-  font-size: .85rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin-bottom: .5rem;
+.video-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
 }
-.video-info time { color: var(--muted); font-size: .78rem; }
+.video-author {
+  color: var(--primary);
+  font-size: .8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video-meta time { color: var(--muted); font-size: .78rem; white-space: nowrap; }
+.section-more {
+  font-size: .9rem;
+  margin-left: auto;
+}
+.section-more:hover { text-decoration: underline; }
 
 /* posts */
 .post-list { list-style: none; }

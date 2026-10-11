@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="hero">
-  <h1>你好，我是{{ .Site.Params.author }}</h1>
-  <p class="hero-desc">{{ .Site.Params.description }}</p>
+  <h1>欢迎来到{{ .Site.Title }}</h1>
+  <p class="hero-desc">{{ .Site.Params.description }} · UP主：{{ .Site.Params.author }}</p>
   <div class="hero-actions">
     <a class="btn btn-qq" href="{{ .Site.Params.qqLink }}" target="_blank" rel="noopener">{{ .Site.Params.qqText }}</a>
     {{ with .Site.Params.bilibiliSpace }}
@@ -13,27 +13,26 @@
 <section class="videos">
   <div class="section-head">
     <h2>最新视频</h2>
-    <span class="section-tip">更新视频只需修改 data/videos.json</span>
+    <a class="section-more" href="{{ "videos/" | relLangURL }}">查看更多 →</a>
   </div>
   <div class="video-grid">
-    {{ range hugo.Data.videos }}
+    {{ $show := default 9 .Site.Params.videoShow }}
+    {{ range first $show hugo.Data.videos }}
     <a class="video-card" href="https://www.bilibili.com/video/{{ .bvid }}" target="_blank" rel="noopener">
       <div class="video-cover">
-        <img src="https://i0.hdslb.com/bfs/archive/{{ .bvid }}.jpg" alt="{{ .title }}" loading="lazy"
-             onerror="this.style.display='none';this.parentNode.classList.add('cover-fallback')">
         <span class="play-icon">▶</span>
+        {{ with .length }}<span class="video-length">{{ . }}</span>{{ end }}
       </div>
       <div class="video-info">
         <h3>{{ .title }}</h3>
-        {{ with .desc }}<p>{{ . }}</p>{{ end }}
-        {{ with .date }}<time>{{ . }}</time>{{ end }}
+        <div class="video-meta">
+          {{ with .author }}<span class="video-author">{{ . }}</span>{{ end }}
+          {{ with .date }}<time>{{ . }}</time>{{ end }}
+        </div>
       </div>
     </a>
     {{ end }}
   </div>
-  {{ if not hugo.Data.videos }}
-  <p class="empty-tip">暂无视频，编辑 <code>data/videos.json</code> 添加。</p>
-  {{ end }}
 </section>
 
 <section class="recent-posts">

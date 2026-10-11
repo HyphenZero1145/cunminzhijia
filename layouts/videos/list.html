@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="videos videos-all">
+  <div class="section-head">
+    <h1>全部视频</h1>
+    <span class="section-tip">共 {{ len hugo.Data.videos }} 个视频 · UP主：{{ .Site.Params.author }}</span>
+  </div>
+  <div class="video-grid">
+    {{ range hugo.Data.videos }}
+    <a class="video-card" href="https://www.bilibili.com/video/{{ .bvid }}" target="_blank" rel="noopener">
+      <div class="video-cover">
+        <span class="play-icon">▶</span>
+        {{ with .length }}<span class="video-length">{{ . }}</span>{{ end }}
+      </div>
+      <div class="video-info">
+        <h3>{{ .title }}</h3>
+        <div class="video-meta">
+          {{ with .author }}<span class="video-author">{{ . }}</span>{{ end }}
+          {{ with .date }}<time>{{ . }}</time>{{ end }}
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

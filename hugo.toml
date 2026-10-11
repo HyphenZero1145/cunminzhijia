@@ -1,18 +1,20 @@
 baseURL = 'https://example.com/'
 locale = 'zh-CN'
-title = '我的小站'
+title = '村民之家'
 hasCJKLanguage = true
 enableEmoji = true
 
 # ===== 站点自定义配置（按需修改） =====
 [params]
-  author = '博主'
-  description = '个人博客 · B站视频更新'
+  author = '炸麦大玉'
+  description = '村民之家 · B站视频更新'
   # QQ 邀请链接（群邀请链接或个人资料页链接均可）
   qqLink = 'https://qm.qq.com/q/你的群号'
   qqText = '加入QQ群'
   # B站空间主页链接（个人简介区）
-  bilibiliSpace = 'https://space.bilibili.com/你的UID'
+  bilibiliSpace = 'https://space.bilibili.com/514215377'
+  # 首页显示的视频数量（其余折叠到 /videos/ 页面）
+  videoShow = 9
 
 [menus]
   [[menus.main]]
@@ -20,9 +22,13 @@ enableEmoji = true
     pageRef = '/'
     weight = 10
   [[menus.main]]
+    name = '全部视频'
+    pageRef = '/videos'
+    weight = 20
+  [[menus.main]]
     name = '文章'
     pageRef = '/posts'
-    weight = 20
+    weight = 30
 
 [markup]
   [markup.goldmark]

@@ -1,14 +1,373 @@
 [
-  {
-    "title": "示例视频：如何更新这个列表",
-    "bvid": "BV1GJ411x7h7",
-    "desc": "把 bvid 换成你视频的 BV 号即可，标题和简介按需修改。最新视频放数组最前面。",
-    "date": "2026-10-11"
-  },
-  {
-    "title": "示例视频2",
-    "bvid": "BV1xx411c7mD",
-    "desc": "第二条示例，可直接删除。",
-    "date": "2026-10-01"
-  }
+    {
+        "title":  "⚡雷霆⚡",
+        "bvid":  "BV1GZNKziEeD",
+        "author":  "炸麦大玉",
+        "date":  "2026-03-08",
+        "length":  "03:41"
+    },
+    {
+        "title":  "⚡宴请八方⚡",
+        "bvid":  "BV19mfMBbEUA",
+        "author":  "炸麦大玉",
+        "date":  "2026-02-23",
+        "length":  "05:22"
+    },
+    {
+        "title":  "梅奔可以上树，我F9直接爬树",
+        "bvid":  "BV1LHFmzCERH",
+        "author":  "炸麦大玉",
+        "date":  "2026-02-10",
+        "length":  "05:01"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（7）嘉年华高速圈",
+        "bvid":  "BV1YNFWzTEXk",
+        "author":  "炸麦大玉",
+        "date":  "2026-02-07",
+        "length":  "04:00"
+    },
+    {
+        "title":  "请输入文本",
+        "bvid":  "BV1vAfQBEELp",
+        "author":  "炸麦大玉",
+        "date":  "2026-02-04",
+        "length":  "03:39"
+    },
+    {
+        "title":  "村民最新力作👍",
+        "bvid":  "BV1JYkWBTEPR",
+        "author":  "炸麦大玉",
+        "date":  "2026-01-18",
+        "length":  "04:45"
+    },
+    {
+        "title":  "最难崩的一集",
+        "bvid":  "BV1N86SB7Eyv",
+        "author":  "炸麦大玉",
+        "date":  "2026-01-10",
+        "length":  "05:19"
+    },
+    {
+        "title":  "新年特作2026👊",
+        "bvid":  "BV1TcigBFEM8",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-31",
+        "length":  "06:09"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（6）大棚圈",
+        "bvid":  "BV1UAv6BjE2t",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-28",
+        "length":  "04:18"
+    },
+    {
+        "title":  "村民最新力作！！！",
+        "bvid":  "BV1qBByBUEvY",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-27",
+        "length":  "05:45"
+    },
+    {
+        "title":  "窝法成了！",
+        "bvid":  "BV1JumYBGEVn",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-14",
+        "length":  "02:09"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（5）大桥雨林圈",
+        "bvid":  "BV12jmeBxE1K",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-14",
+        "length":  "05:33"
+    },
+    {
+        "title":  "无能的丈夫",
+        "bvid":  "BV1ZC2RBeEhP",
+        "author":  "炸麦大玉",
+        "date":  "2025-12-07",
+        "length":  "04:49"
+    },
+    {
+        "title":  "游戏特色：外挂，bug👍",
+        "bvid":  "BV1HHULBPEZR",
+        "author":  "炸麦大玉",
+        "date":  "2025-11-25",
+        "length":  "04:15"
+    },
+    {
+        "title":  "⚠我以为危险标志呢⚠",
+        "bvid":  "BV15ZycBBELP",
+        "author":  "炸麦大玉",
+        "date":  "2025-11-20",
+        "length":  "08:46"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（4）机场圈",
+        "bvid":  "BV12RywBbEp6",
+        "author":  "炸麦大玉",
+        "date":  "2025-11-20",
+        "length":  "05:39"
+    },
+    {
+        "title":  "村民立了",
+        "bvid":  "BV1wdC2BCE9R",
+        "author":  "炸麦大玉",
+        "date":  "2025-11-16",
+        "length":  "09:46"
+    },
+    {
+        "title":  "啊？",
+        "bvid":  "BV1gHydBQEZX",
+        "author":  "炸麦大玉",
+        "date":  "2025-11-02",
+        "length":  "09:28"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV17K4MzvEMy",
+        "author":  "炸麦大玉",
+        "date":  "2025-10-12",
+        "length":  "05:47"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV1KoxjzzEbM",
+        "author":  "炸麦大玉",
+        "date":  "2025-10-07",
+        "length":  "03:15"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（3）山顶圈",
+        "bvid":  "BV1YHxKzXEXQ",
+        "author":  "炸麦大玉",
+        "date":  "2025-10-05",
+        "length":  "03:46"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV17fxhzeEsD",
+        "author":  "炸麦大玉",
+        "date":  "2025-10-05",
+        "length":  "03:13"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV1p7nLzUEYE",
+        "author":  "炸麦大玉",
+        "date":  "2025-09-27",
+        "length":  "02:28"
+    },
+    {
+        "title":  "我玩你大坝",
+        "bvid":  "BV1UbHozLER1",
+        "author":  "炸麦大玉",
+        "date":  "2025-09-14",
+        "length":  "02:33"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV1tvYMzTE9F",
+        "author":  "炸麦大玉",
+        "date":  "2025-09-07",
+        "length":  "02:56"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（2）圣胡安圈",
+        "bvid":  "BV1uJhYzqEhh",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-30",
+        "length":  "05:54"
+    },
+    {
+        "title":  "一勺料汁~~~",
+        "bvid":  "BV13ShQzfEXa",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-29",
+        "length":  "02:13"
+    },
+    {
+        "title":  "超级详细保姆级淘汰之王教学（1）沙漠圈",
+        "bvid":  "BV1VLe9zrENQ",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-28",
+        "length":  "05:56"
+    },
+    {
+        "title":  "哇，还有巴巴博弈",
+        "bvid":  "BV1A1exz7E31",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-25",
+        "length":  "02:00"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV1w8eLzmEck",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-24",
+        "length":  "01:59"
+    },
+    {
+        "title":  "平静的水手培养不出优秀的海浪",
+        "bvid":  "BV1GJYfznEut",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-22",
+        "length":  "02:02"
+    },
+    {
+        "title":  "村民最新力作",
+        "bvid":  "BV1nYYazdEC2",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-19",
+        "length":  "01:44"
+    },
+    {
+        "title":  "被以大欺小前的幻想罢了",
+        "bvid":  "BV1BpbJz3E1m",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-15",
+        "length":  "03:39"
+    },
+    {
+        "title":  "名爵一觉醒来成极速之王了",
+        "bvid":  "BV1EVtXzaEn3",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-12",
+        "length":  "01:51"
+    },
+    {
+        "title":  "朋友，这里不能停车",
+        "bvid":  "BV1yQbgzbEfE",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-11",
+        "length":  "03:58"
+    },
+    {
+        "title":  "攻击物是外挂！！！",
+        "bvid":  "BV12gt4zBEc9",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-09",
+        "length":  "02:42"
+    },
+    {
+        "title":  "退的最快的一集",
+        "bvid":  "BV114tvzfEmw",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-07",
+        "length":  "02:16"
+    },
+    {
+        "title":  "旁观者模式",
+        "bvid":  "BV1nUtEz6EHJ",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-05",
+        "length":  "01:29"
+    },
+    {
+        "title":  "略施小计",
+        "bvid":  "BV1DahEzwEkH",
+        "author":  "炸麦大玉",
+        "date":  "2025-08-03",
+        "length":  "01:39"
+    },
+    {
+        "title":  "老天赐鸡    必吃的一把【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1beXWYpEcQ",
+        "author":  "炸麦大玉",
+        "date":  "2025-03-23",
+        "length":  "06:56"
+    },
+    {
+        "title":  "车斗术吗？有点意思。【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1TTNbe8ETv",
+        "author":  "炸麦大玉",
+        "date":  "2025-02-07",
+        "length":  "05:27"
+    },
+    {
+        "title":  "车车乐【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV11ENce7EZo",
+        "author":  "炸麦大玉",
+        "date":  "2025-02-05",
+        "length":  "04:37"
+    },
+    {
+        "title":  "帅出残影【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1dTF6e8ER8",
+        "author":  "炸麦大玉",
+        "date":  "2025-02-03",
+        "length":  "06:20"
+    },
+    {
+        "title":  "⚡立⚡【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1D9f8YsE71",
+        "author":  "炸麦大玉",
+        "date":  "2025-01-22",
+        "length":  "07:09"
+    },
+    {
+        "title":  "帅是一辈子的事【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1A2cue4EMk",
+        "author":  "炸麦大玉",
+        "date":  "2025-01-12",
+        "length":  "06:49"
+    },
+    {
+        "title":  "F9：会赢的🙃👌【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1JV28YzENE",
+        "author":  "炸麦大玉",
+        "date":  "2024-10-13",
+        "length":  "07:14"
+    },
+    {
+        "title":  "最新一集:⚡门外竖着⚡【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV13C1XYWEy6",
+        "author":  "炸麦大玉",
+        "date":  "2024-10-06",
+        "length":  "07:26"
+    },
+    {
+        "title":  "奇奇怪怪的动力【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1yAtyeoEPB",
+        "author":  "炸麦大玉",
+        "date":  "2024-09-25",
+        "length":  "06:54"
+    },
+    {
+        "title":  "bro以为自己装NPC没有被发现【地平线5淘汰之王+躲猫猫抽象篇】",
+        "bvid":  "BV1cp4deSEHd",
+        "author":  "炸麦大玉",
+        "date":  "2024-09-19",
+        "length":  "06:24"
+    },
+    {
+        "title":  "有点慌!【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1iz4UeREk3",
+        "author":  "炸麦大玉",
+        "date":  "2024-09-16",
+        "length":  "06:46"
+    },
+    {
+        "title":  "一辆车可以出现在任何地方【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1wktMesEyQ",
+        "author":  "炸麦大玉",
+        "date":  "2024-09-15",
+        "length":  "06:08"
+    },
+    {
+        "title":  "bro以为自己是2级车【地平线5淘汰之王抽象篇】",
+        "bvid":  "BV1cfpbeiEdp",
+        "author":  "炸麦大玉",
+        "date":  "2024-09-07",
+        "length":  "06:08"
+    },
+    {
+        "title":  "全网第一,见证历史！！！淘汰之王史上最短最终赛终点，我寻思我打山顶圈呢",
+        "bvid":  "BV1pKHTeBESh",
+        "author":  "炸麦大玉",
+        "date":  "2024-08-29",
+        "length":  "01:11"
+    }
 ]
