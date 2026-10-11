@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>你好，我是{{ .Site.Params.author }}</h1>
+  <p class="hero-desc">{{ .Site.Params.description }}</p>
+  <div class="hero-actions">
+    <a class="btn btn-qq" href="{{ .Site.Params.qqLink }}" target="_blank" rel="noopener">{{ .Site.Params.qqText }}</a>
+    {{ with .Site.Params.bilibiliSpace }}
+    <a class="btn btn-outline" href="{{ . }}" target="_blank" rel="noopener">B站空间</a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="videos">
+  <div class="section-head">
+    <h2>最新视频</h2>
+    <span class="section-tip">更新视频只需修改 data/videos.json</span>
+  </div>
+  <div class="video-grid">
+    {{ range hugo.Data.videos }}
+    <a class="video-card" href="https://www.bilibili.com/video/{{ .bvid }}" target="_blank" rel="noopener">
+      <div class="video-cover">
+        <img src="https://i0.hdslb.com/bfs/archive/{{ .bvid }}.jpg" alt="{{ .title }}" loading="lazy"
+             onerror="this.style.display='none';this.parentNode.classList.add('cover-fallback')">
+        <span class="play-icon">▶</span>
+      </div>
+      <div class="video-info">
+        <h3>{{ .title }}</h3>
+        {{ with .desc }}<p>{{ . }}</p>{{ end }}
+        {{ with .date }}<time>{{ . }}</time>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  {{ if not hugo.Data.videos }}
+  <p class="empty-tip">暂无视频，编辑 <code>data/videos.json</code> 添加。</p>
+  {{ end }}
+</section>
+
+<section class="recent-posts">
+  <h2>最新文章</h2>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ if $posts }}
+  <ul class="post-list">
+    {{ range first 5 $posts }}
+    <li>
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p class="empty-tip">暂无文章，在 content/posts/ 下新建 Markdown 文件即可。</p>
+  {{ end }}
+</section>
+{{ end }}

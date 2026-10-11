@@ -1,0 +1,30 @@
+baseURL = 'https://example.com/'
+locale = 'zh-CN'
+title = '我的小站'
+hasCJKLanguage = true
+enableEmoji = true
+
+# ===== 站点自定义配置（按需修改） =====
+[params]
+  author = '博主'
+  description = '个人博客 · B站视频更新'
+  # QQ 邀请链接（群邀请链接或个人资料页链接均可）
+  qqLink = 'https://qm.qq.com/q/你的群号'
+  qqText = '加入QQ群'
+  # B站空间主页链接（个人简介区）
+  bilibiliSpace = 'https://space.bilibili.com/你的UID'
+
+[menus]
+  [[menus.main]]
+    name = '首页'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = '文章'
+    pageRef = '/posts'
+    weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
