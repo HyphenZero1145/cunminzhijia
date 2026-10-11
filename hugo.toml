@@ -9,7 +9,7 @@ enableEmoji = true
   author = '炸麦大玉'
   description = '村民之家 · B站视频更新'
   # QQ 邀请链接（群邀请链接或个人资料页链接均可）
-  qqLink = '点击链接加入群聊【北极星市区】：https://qm.qq.com/q/dUuatzN8o8'
+  qqLink = 'https://qm.qq.com/q/dUuatzN8o8'
   qqText = '加入QQ群'
   # B站空间主页链接（个人简介区）
   bilibiliSpace = 'https://space.bilibili.com/514215377'
