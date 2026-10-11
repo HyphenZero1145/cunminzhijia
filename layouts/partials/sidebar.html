@@ -13,12 +13,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     {{ $url := .URL | relLangURL }}
-    {{ $active := false }}
-    {{ if eq $url site.Home.RelPermalink }}
-      {{ $active = eq $currentPage.RelPermalink site.Home.RelPermalink }}
-    {{ else }}
-      {{ $active = hasPrefix $currentPage.RelPermalink $url }}
-    {{ end }}
+    {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
     <a href="{{ $url }}" class="nav-item{{ if $active }} active{{ end }}"{{ if $active }} aria-current="page"{{ end }}>
       <span class="nav-indicator"></span>
       <span class="nav-icon">
