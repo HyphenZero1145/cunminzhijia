@@ -12,8 +12,14 @@
   <nav class="sidebar-nav">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    {{ $active := or (eq $currentPage.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $currentPage.RelPermalink .URL)) }}
-    <a href="{{ .URL | relLangURL }}" class="nav-item{{ if $active }} active{{ end }}">
+    {{ $url := .URL | relLangURL }}
+    {{ $active := false }}
+    {{ if eq $url site.Home.RelPermalink }}
+      {{ $active = eq $currentPage.RelPermalink site.Home.RelPermalink }}
+    {{ else }}
+      {{ $active = hasPrefix $currentPage.RelPermalink $url }}
+    {{ end }}
+    <a href="{{ $url }}" class="nav-item{{ if $active }} active{{ end }}"{{ if $active }} aria-current="page"{{ end }}>
       <span class="nav-indicator"></span>
       <span class="nav-icon">
         {{ if eq .Name "首页" }}
