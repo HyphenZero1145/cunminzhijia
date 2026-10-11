@@ -162,6 +162,14 @@ a:hover { text-decoration: underline; }
 }
 .sidebar-brand:hover { background: color-mix(in srgb, var(--md-on-surface) 8%, transparent); text-decoration: none; }
 .brand-icon { font-size: 1.4rem; flex-shrink: 0; }
+.brand-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--md-outline-variant);
+}
 .brand-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .sidebar-nav {
