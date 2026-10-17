@@ -7,10 +7,16 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <link rel="icon" type="image/jpeg" href="{{ "avatar.jpg" | relURL }}">
   <link rel="apple-touch-icon" href="{{ "avatar.jpg" | relURL }}">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme');
+      if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}
+    })();
+  </script>
 </head>
 <body>
   <div class="app">
@@ -29,6 +35,11 @@
       var scrim=document.querySelector('.scrim');
       if(toggle){toggle.addEventListener('click',function(){drawer.classList.toggle('open');scrim.classList.toggle('show');document.body.classList.toggle('nav-open');});}
       if(scrim){scrim.addEventListener('click',function(){drawer.classList.remove('open');scrim.classList.remove('show');document.body.classList.remove('nav-open');});}
+      var themeBtn=document.getElementById('theme-toggle');
+      if(themeBtn){themeBtn.addEventListener('click',function(){
+        var d=document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme',d?'dark':'light');
+      });}
     })();
   </script>
 </body>
